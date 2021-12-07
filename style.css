@@ -23,17 +23,26 @@
 
 .main-container > .weather {
   display: flex;
+  align-items: center;
+
   list-style: none;
 
   font-size: 20px;
   font-weight: 400;
 }
 
-.weather > .weather-icon {
+.weather > #weather-icon {
   padding-right: 1em;
+  width: 32px;
+  height: 32px;
 }
 
-.main-container > .description {
+.weather > #weather-icon > img {
+  width: inherit;
+  height: inherit;
+}
+
+.main-container > #description {
   font-size: 20px;
   font-weight: 400;
 }
