@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10em auto;
+
+  width: 400px;
+  height: 600px;
+}
+
+.main-container > header {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.main-container > .weather {
+  display: flex;
+  list-style: none;
+
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.weather > .weather-icon {
+  padding-right: 1em;
+}
+
+.main-container > .description {
+  font-size: 20px;
+  font-weight: 400;
+}
