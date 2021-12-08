@@ -14,20 +14,24 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="main-container">
+      <span id="update-time"></span>
       <header>
-        <span id="city">서울</span>
-        <span id="country">대한민국</span>
+        <span id="city"></span>
+        <span id="country"></span>
       </header>
       <ul class="weather">
         <li id="weather-icon"></li>
-        <li id="temperature">11º</li>
-        <li class="unit">C</li>
+        <li id="temperature"></li>
       </ul>
-      <span id="description">대체로 흐림</span>
+      <span id="description"></span>
+      <ul class="temp-max-min">
+        <li id="temp-max"></li>
+        <li id="temp-min"></li>
+      </ul>
     </div>
   </body>
 </html>

@@ -16,8 +16,13 @@
   height: 600px;
 }
 
+.main-container > #update-time {
+  font-size: 1em;
+  font-weight: 400;
+}
+
 .main-container > header {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -32,7 +37,7 @@
 }
 
 .weather > #weather-icon {
-  padding-right: 1em;
+  margin-right: 1em;
   width: 32px;
   height: 32px;
 }
@@ -45,4 +50,18 @@
 .main-container > #description {
   font-size: 20px;
   font-weight: 400;
+}
+
+.main-container > .temp-max-min {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main-container > .temp-max-min :first-child {
+  margin-right: 1em;
 }
