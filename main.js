@@ -11,6 +11,8 @@ const weatherIconDocument = document.getElementById("weather-icon");
 const tempMaxDocument = document.getElementById("temp-max");
 const tempMinDocument = document.getElementById("temp-min");
 
+const DaysArray = ["SUN","MON","TUE","WES","THU","FRI","SAT"];
+
 fetch(`http://api.openweathermap.org/data/2.5/weather?q=${CITY}, ${COUNTRY}&appid=${API_KEY}`)
 .then(response => response.json())
 .then(data => updateData(data))
@@ -21,11 +23,11 @@ function updateData(jsonData){
     console.log(jsonData);
 
     let today = new Date();
+    let days = DaysArray[today.getDay()];
     let hours = today.getHours();
     let mins = today.getMinutes() < 10 ? `0${today.getMinutes()}` : today.getMinutes();
-    let hourString =  hours > 12 ? "P.M." : "A.M." ;
     
-    updateTimeDocument.innerText = `${hourString} ${hours}:${mins}`;
+    updateTimeDocument.innerText = `${days} ${hours}:${mins}`;
     
     let cityData = jsonData["name"];
     let weahterData = jsonData["weather"];
